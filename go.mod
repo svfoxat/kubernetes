@@ -104,7 +104,7 @@ require (
 	k8s.io/kms v0.36.2
 	k8s.io/kube-aggregator v0.36.2
 	k8s.io/kube-controller-manager v0.36.2
-	k8s.io/kube-openapi v0.36.2-20260317180543-43fb72c5454a
+	k8s.io/kube-openapi v0.0.0-20260317180543-43fb72c5454a
 	k8s.io/kube-proxy v0.36.2
 	k8s.io/kube-scheduler v0.36.2
 	k8s.io/kubectl v0.36.2
@@ -115,8 +115,8 @@ require (
 	k8s.io/sample-apiserver v0.36.2
 	k8s.io/streaming v0.36.2
 	k8s.io/system-validators v1.12.1
-	k8s.io/utils v0.36.2-20260210185600-b8788abfbbc2
-	sigs.k8s.io/json v0.36.2-20250730193827-2d320260d730
+	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
+	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730
 	sigs.k8s.io/knftables v0.0.21
 	sigs.k8s.io/randfill v1.0.0
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.2
