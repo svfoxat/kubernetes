@@ -21,6 +21,7 @@ import (
 	"fmt"
 	"math/rand"
 	"net"
+	"runtime"
 	goruntime "runtime"
 	"sort"
 	"strings"
@@ -727,6 +728,11 @@ func validateNodeIP(nodeIP net.IP) error {
 	}
 	if nodeIP.IsUnspecified() {
 		return fmt.Errorf("nodeIP can't be an all zeros address")
+	}
+
+	// no host interface on wasm, trust --node-ip
+	if runtime.GOOS == "js" {
+		return nil
 	}
 
 	addrs, err := net.InterfaceAddrs()

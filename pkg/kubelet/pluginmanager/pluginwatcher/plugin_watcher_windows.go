@@ -19,9 +19,10 @@ limitations under the License.
 package pluginwatcher
 
 import (
+	"os"
+
 	"github.com/fsnotify/fsnotify"
 	"k8s.io/kubernetes/pkg/kubelet/util"
-	"os"
 )
 
 func getStat(event fsnotify.Event) (os.FileInfo, error) {

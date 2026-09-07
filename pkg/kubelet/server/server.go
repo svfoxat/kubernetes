@@ -258,7 +258,8 @@ func ListenAndServePodResources(ctx context.Context, endpoint string, providers 
 	l, err := util.CreateListener(endpoint)
 	if err != nil {
 		logger.Error(err, "Failed to create listener for podResources endpoint")
-		os.Exit(1)
+		return
+		//os.Exit(1)
 	}
 
 	logger.Info("Starting to serve the podresources API", "endpoint", endpoint)
